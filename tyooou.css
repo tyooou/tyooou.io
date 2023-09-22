@@ -3,3 +3,8 @@ body {
     background: pink;
     text-align: center;
 }
+
+@font-face {
+    font-family: defaultFont;
+    src: url(git);
+}
