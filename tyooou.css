@@ -1,10 +1,72 @@
 body {
-    margin: 0;
-    background: pink;
+    background: white;
     text-align: center;
 }
 
 @font-face {
     font-family: defaultFont;
-    src: url(Gidole-Regular.ttf);
+    src: url(Gilgan\ 400.otf);
+}
+
+p, h1, h2 {
+    font-family: defaultFont;
+}
+
+.mainText {
+    color: #1C1C1C;
+    padding: 0;
+    font-size: 100px;
+}
+
+.subtitle {
+    font-size: 20;
+    opacity: 75%;
+}
+
+.homepageButton {
+    color: #1C1C1C;
+    border: none;
+    text-align: center;
+    font-family: defaultFont;
+    padding: 10px;
+    background-color:rgba(0,0,0, 0);
+
+}
+
+.homepageButton:hover {
+    
+    background-color: rgba(0,0,0, 0.1);
+    transition: 0.2s;
+}
+
+.mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.iconResize {
+    height: 30;
+}
+
+.darkMode {
+    background-color: black;
+    color:white;
+}
+
+
+.lightModeIcon:before {
+    zoom: 5%;
+    content: url('../darkmode_icon.png');
+    
+}
+.darkModeIcon:before {
+    zoom: 5%;
+    content: url('../lightmode_icon.png');
+    
+}
+
+body {
+    transition: 0.3s;
 }
