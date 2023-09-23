@@ -30,7 +30,9 @@ p {
 }
 
 .subtitle {
+    transition: ;
     font-size: 20;
+    color: #1C1C1C;
     opacity: 75%;
     text-align: center;
 }
@@ -71,24 +73,15 @@ p {
 }
 
 
-.darkModeIcon:before {
+.darkModeIcon {
     zoom: 5%;
     filter: brightness(0.5);
-    content: url('../darkmode_icon.png');
+    position: absolute; 
+    top: 200px; 
+    right: 200px;
     
 }
 
-.lightModeIcon:before {
-    zoom: 5%;
-    filter: brightness(0) invert(1);
-    content: url('../lightmode_icon.png'); 
-}
-
-.darkModeToggle {
-    position: absolute; 
-    top: 8px; 
-    right: 8px;
-}
 
 .darkModeText {
     transition: 0.3s;
