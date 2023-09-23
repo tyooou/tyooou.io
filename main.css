@@ -1,0 +1,104 @@
+body {
+    background: white;
+    transition: 0.3s;
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url(Gilgan\ 400.otf);
+}
+
+@font-face {
+    font-family: textFont;
+    src: url(Heebo-VariableFont_wght.ttf);
+}
+
+h1, h2 {
+    font-family: defaultFont;
+}
+
+p {
+    font-family: textFont;
+}
+
+.mainText {
+    transition: 0.3s;
+    color: #1C1C1C;
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
+}
+
+.subtitle {
+    font-size: 20;
+    opacity: 75%;
+    text-align: center;
+}
+
+.homepageButton {
+    transition: 0.3s;
+    color: #1C1C1C;
+    border: none;
+    text-align: center;
+    font-family: defaultFont;
+    padding: 10px;
+    background-color:rgba(0,0,0, 0);
+
+}
+
+.homepageButton:hover {
+    
+    background-color: rgba(0,0,0, 0.1);
+    transition: 0.2s;
+}
+
+.mainBody {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.iconResize {
+    height: 28;
+}
+
+.darkMode {
+    background-color: #1C1C1C;
+    color:white;
+}
+
+
+.darkModeIcon:before {
+    zoom: 5%;
+    filter: brightness(0.5);
+    content: url('../darkmode_icon.png');
+    
+}
+
+.lightModeIcon:before {
+    zoom: 5%;
+    filter: brightness(0) invert(1);
+    content: url('../lightmode_icon.png'); 
+}
+
+.darkModeToggle {
+    position: absolute; 
+    top: 8px; 
+    right: 8px;
+}
+
+.darkModeText {
+    transition: 0.3s;
+    color: white;
+}
+
+nav {
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

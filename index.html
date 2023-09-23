@@ -1,19 +1,33 @@
-<html lang=""en">
-<head>
-    <meta charset="UTF-8">
-    <meta nam="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="tyoooujava.js"></script>
-    <link rel="stylesheet" href="tyooou.css">
-    <title>change</title>
-</head>
-<body>
-    <div class="mainBody">
-        <h1 class="mainText">tyler young.</h1>
-        <h2 class="subtitle"> Developer + Designer</h2>
-    </div>
-    <button type="button" class="homepageButton" onclick="location.href='about.html'">about</button>
-    <button type="button" class="homepageButton">projects</button>
-    <button type="button" class="homepageButton">contact</button>
-    <i id="myDIV" onclick="darkMode(this)" class="lightModeIcon" style="position: absolute; top: 8px; right: 8px;"></i>    
-</body>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tyler Young">
+        <meta name="description" content="A portfolio of the work of Tyler Young.">
+        <meta nam="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tyooou</title>
+        <link rel="icon" href="placeholder.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <section>
+            <div class="mainBody">
+                <h1 id="darkModeTitle" class="mainText">tyler young.</h1> 
+                <p class="subtitle"> Developer + Designer</p>
+            </div>
+            
+           
+        </section>
+
+        <nav>
+            <button id="darkModeText" type="button" class="homepageButton" onclick="location.href='about.html'">about</button>
+            <button id="darkModeText" type="button" class="homepageButton">projects</button>
+            <button id="darkModeText" type="button" class="homepageButton">contact</button>
+        </nav>
+
+        <i id="darkModeToggle" onclick="darkMode()" class="darkModeIcon darkModeToggle"></i>    
+    </body>
 </html>
