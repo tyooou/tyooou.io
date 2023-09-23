@@ -4,4 +4,5 @@ function darkMode(icon) {
     element.classList.toggle("darkMode");
     icon.classList.toggle('darkModeIcon');
     
+    
 }
