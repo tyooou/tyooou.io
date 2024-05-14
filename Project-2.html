@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+    <script src="./main.js"></script>
+    <title>projects</title>
+  </head>
+  <body>
+    <i onclick="darkMode()"
+      ><img
+        id="darkModeIconToggle"
+        class="darkModeIcon"
+        src="./Icons/darkmode_icon.png"
+    /></i>
+
+    <i
+      onclick="transitionToPage('./Project-3.html')"
+      id="right-direction"
+      class="direction"
+      ><img src="./Icons/right.png" class="btn-icon"
+    /></i>
+    <i
+      onclick="transitionToPage('./Project-1.html')"
+      id="left-direction"
+      class="direction"
+      ><img src="./Icons/left.png" class="btn-icon"
+    /></i>
+
+    <div id="project-container">
+      <div id="project-body">
+        <div id="project-text">
+          <h1 class="preview-title">Project-2</h1>
+          <p class="preview-description">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+          <div id="project-properties">
+            <div id="tag-container">
+              <p class="project-tag">UI/UX</p>
+              <p class="project-tag">Tool</p>
+              <p class="project-tag">Web Development</p>
+            </div>
+          </div>
+          <div id="project-buttons">
+            <div
+              class="project-btn"
+              onclick="window.open('https://github.com/tyooou/digital-noteboard','mywindow');"
+            >
+              <img src="./icons/code.png" alt="code.png" class="btn-icon" />
+              <p>Repository</p>
+            </div>
+            <div
+              class="project-btn"
+              onclick="window.open('https://tyooou.github.io/digital-noteboard/','mywindow');"
+            >
+              <img src="./icons/eye.png" alt="eye.png" class="btn-icon" />
+              <p>View Live</p>
+            </div>
+            <div class="project-btn">
+              <i onclick="transitionToPage('./index.html')"
+                ><img src="./icons/home.png" alt="home.png" class="btn-icon" />
+              </i>
+            </div>
+          </div>
+        </div>
+        <div id="project-preview" class="scrollbar">
+          <video class="preview-content" controls>
+            <source
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/256660296/movie_max.webm?t=1454099186"
+              type="video/mp4"
+              poster=""
+            />
+          </video>
+          <img
+            src="./Project_Placeholders/2-1.jpg"
+            alt="preview-1"
+            class="preview-content"
+          />
+          <img
+            src="./Project_Placeholders/2-2.jpg"
+            alt="preview-2"
+            class="preview-content"
+          />
+          <img
+            src="./Project_Placeholders/2-3.jpg"
+            alt="preview-3"
+            class="preview-content"
+          />
+          <img
+            src="./Project_Placeholders/2-4.jpg"
+            alt="preview-4"
+            class="preview-content"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

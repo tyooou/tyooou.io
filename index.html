@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Tyler Young" />
+    <meta
+      name="description"
+      content="A portfolio of the work of Tyler Young."
+    />
+    <meta nam="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js"></script>
+    <title>tyooou</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Tyler Young">
-        <meta name="description" content="A portfolio of the work of Tyler Young.">
-        <meta nam="viewport" content="width=device-width, initial-scale=1.0">
-        <title>tyooou</title>
-        <link rel="icon" href="placeholder.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css">
-        <script src="main.js"></script>
-    </head>
+  <body>
+    <i onclick="darkMode()"
+      ><img
+        id="darkModeIconToggle"
+        class="darkModeIcon"
+        src="./Icons/darkmode_icon.png"
+    /></i>
 
-    <body>
-        <section>
-            <div class="mainBody">
-                <h1 id="darkModeTitle" class="mainText">tyler young.</h1> 
-                <p class="subtitle"> Developer + Designer</p>
-            </div>
-            
-           
-        </section>
+    <section>
+      <div class="mainBody">
+        <h1 class="mainText">tyler young.</h1>
+        <p class="subtitle">Developer + Designer</p>
+        <p>
+          I am a second-year software engineering student at the
+          <a href="https://www.auckland.ac.nz/en.html">
+            University of Auckland</a
+          >. <br />My passions align with emerging technologies and interactive
+          designs.
+        </p>
+      </div>
+    </section>
 
-        <nav>
-            <button id="darkModeText" type="button" class="homepageButton" onclick="location.href='about.html'">about</button>
-            <button id="darkModeText" type="button" class="homepageButton">projects</button>
-            <button id="darkModeText" type="button" class="homepageButton">contact</button>
-        </nav>
-
-        <i id="darkModeToggle" onclick="darkMode()" class="darkModeIcon darkModeToggle"></i>    
-    </body>
+    <!-- Button Menu -->
+    <section>
+      <nav class="btn-menu">
+        <button type="button" class="btn-text">
+          <i onclick="window.open('mailto:young.h.tyler@gmail.com','mywindow');"
+            ><img src="./icons/mailbox.png" alt="mail.png" class="btn-icon" />
+          </i>
+        </button>
+        <button type="button" class="btn-text">
+          <i onclick="window.open('https://github.com/tyooou','mywindow');"
+            ><img
+              src="./icons/github_icon.png"
+              alt="github_icon.png"
+              class="btn-icon"
+            />
+          </i>
+        </button>
+        <button type="button" class="btn-text">
+          <i
+            onclick="window.open('https://www.linkedin.com/in/tylerhyoung/','mywindow');"
+            ><img
+              src="./icons/linkedin_icon.png"
+              alt="linkedin_icon.png"
+              class="btn-icon"
+            />
+          </i>
+        </button>
+      </nav>
+      <div class="dropdown">
+        <button onclick="projectBtn()" class="dropdown-btn btn-text">
+          <img src="./Icons/projects-icon.png" class="btn-icon" />Projects<img
+            src="./Icons/down-arrow.png"
+            class="btn-down"
+          />
+        </button>
+        <div id="dropdownId" class="dropdown-content">
+          <a href="./Project-1.html">Project 1</a>
+          <a href="./Project-2.html">Project 2</a>
+          <a href="./Project-3.html">Project 3</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
