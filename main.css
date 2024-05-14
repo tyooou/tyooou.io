@@ -6,12 +6,12 @@ body {
 
 @font-face {
   font-family: defaultFont;
-  src: url(Gilgan\ 400.otf);
+  src: url(./Fonts/Gilgan\ 400.otf);
 }
 
 @font-face {
   font-family: textFont;
-  src: url(Heebo-VariableFont_wght.ttf);
+  src: url(./Fonts/Heebo-VariableFont_wght.ttf);
 }
 
 h1,
