@@ -9,15 +9,15 @@ function darkMode() {
   allIcons = document.querySelectorAll(".darkModeIcon, .btn-icon, .btn-down");
   for (let j = 0; j < allIcons.length; j++) {
     allIcons[j].style =
-      icon.getAttribute("src") == "./Icons/darkmode_icon.png"
+      icon.getAttribute("src") == "./icons/darkmode_icon.png"
         ? "filter: brightness(0) invert(1);"
         : "filter: brightness(0.3)";
   }
 
   icon.src =
-    icon.getAttribute("src") == "./Icons/darkmode_icon.png"
-      ? "./Icons/lightmode_icon.png"
-      : "./Icons/darkmode_icon.png";
+    icon.getAttribute("src") == "./icons/darkmode_icon.png"
+      ? "./icons/lightmode_icon.png"
+      : "./icons/darkmode_icon.png";
 }
 
 function projectBtn() {
