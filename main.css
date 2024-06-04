@@ -45,7 +45,6 @@ a {
   font-size: 20;
   color: #1c1c1c;
   opacity: 75%;
-  text-align: center;
   margin-bottom: 2vh;
 }
 
@@ -67,7 +66,7 @@ a {
 
 .mainBody {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -93,13 +92,21 @@ a {
 }
 
 .btn-menu {
+  margin-top: 2vh;
   display: flex;
+  margin-bottom: 2vh;
   align-items: center;
+  justify-content: center;
 }
 
 .darkMode {
   background-color: #1c1c1c;
   color: white;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
 }
 
 .darkModeIcon {
@@ -116,27 +123,11 @@ a {
   color: white;
 }
 
-nav {
-  top: 52%;
-  left: 50%;
-  margin-right: -50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.dropdown {
-  top: 56%;
-  left: 50%;
-  margin-right: -50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #1c1c1c;
-  padding: 16px;
+  margin-top: 2vh;
   z-index: 1;
 }
 
