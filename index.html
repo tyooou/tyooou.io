@@ -25,8 +25,8 @@
     <div class="mainBody">
       <h1 class="mainText">tyler young.</h1>
       <p class="subtitle">Developer + Designer</p>
-      <p>
-        I am an antepenultimate software engineering student at the
+      <p class="biography">
+        I am a antepenultimate software engineering student at the
         <a href="https://www.auckland.ac.nz/en.html"> University of Auckland</a
         >. <br />My passions align with emerging technologies and interactive
         designs.
@@ -69,13 +69,25 @@
         </button>
       </nav>
       <div class="dropdown">
-        <button onclick="projectBtn()" class="dropdown-btn btn-text">
-          Projects<img src="./icons/down-arrow.png" class="btn-down" />
+        <button
+          type="button"
+          onclick="projectBtn()"
+          class="dropdown-btn btn-text"
+        >
+          Projects<img
+            id="dropdown-icon"
+            class="btn-down"
+            src="./icons/down-arrow.png"
+            alt="down-arrow.png"
+          />
         </button>
         <div id="dropdownId" class="dropdown-content">
-          <a href="./Project-1.html">Project 1</a>
+          <a id="project-link" href="./Project-1.html">Project 1</a>
           <a href="./Project-2.html">Project 2</a>
           <a href="./Project-3.html">Project 3</a>
+          <a href="./Project-1.html">Project 4</a>
+          <a href="./Project-2.html">Project 5</a>
+          <a href="./Project-3.html">Project 6</a>
         </div>
       </div>
     </div>

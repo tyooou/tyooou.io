@@ -21,7 +21,9 @@ function darkMode() {
 }
 
 function projectBtn() {
-  document.getElementById("dropdownId").classList.toggle("show");
+  let dropdown = document.getElementById("dropdownId");
+  dropdown.classList.toggle("show");
+  document.getElementById("dropdown-icon").classList.toggle("dropdown-rotate");
 }
 
 window.onload = darkMode;

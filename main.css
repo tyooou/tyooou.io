@@ -26,6 +26,7 @@ a {
   font-family: textFont;
   margin: 0;
   text-decoration: none;
+  border-radius: 1vh;
 }
 
 a {
@@ -49,6 +50,10 @@ a {
   margin-bottom: 2vh;
 }
 
+.biography {
+  font-size: 18px;
+}
+
 .btn-text {
   transition: 0.3s;
   color: #1c1c1c;
@@ -60,9 +65,9 @@ a {
   align-items: center;
 }
 
-.btn-text:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
+.btn-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease;
 }
 
 .mainBody {
@@ -86,14 +91,14 @@ a {
 }
 
 .btn-down {
-  transition: 0.3s;
   zoom: 2%;
   filter: brightness(0.5);
-  padding: 250px;
+  margin-left: 40vh;
+  transition: 0.3s;
 }
 
 .btn-menu {
-  margin-top: 2vh;
+  margin-top: 3vh;
   display: flex;
   margin-bottom: 2vh;
   align-items: center;
@@ -110,6 +115,15 @@ a {
   justify-content: center;
 }
 
+.dropdown-btn {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+}
+
+.dropdown-btn:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
 .darkModeIcon {
   transition: 0.3s;
   zoom: 5%;
@@ -119,25 +133,40 @@ a {
   right: 200px;
 }
 
+.darkModeIcon:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
 .darkModeText {
   transition: 0.3s;
   color: white;
 }
 
 .dropdown-content {
+  background-color: rgba(0, 0, 0, 0.2);
   display: none;
   position: absolute;
-  background-color: #1c1c1c;
-  margin-top: 2vh;
+  margin-top: 4vh;
+  padding: 1vh 3vh 1vh 3vh;
   z-index: 1;
+  border-radius: 1vh;
 }
 
 .dropdown-content a {
   display: block;
+  margin: 10px;
 }
 
 .show {
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2vh;
+}
+
+.dropdown-rotate {
+  transition: 0.3s;
+  transform: rotate(180deg);
 }
 
 /* Projects */
