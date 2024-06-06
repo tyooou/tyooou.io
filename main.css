@@ -98,7 +98,7 @@ a {
 }
 
 .btn-menu {
-  margin-top: 3vh;
+  margin-top: 2.5vh;
   display: flex;
   margin-bottom: 2vh;
   align-items: center;
@@ -145,27 +145,36 @@ a {
 
 .dropdown-content {
   background-color: rgba(0, 0, 0, 0.2);
-  display: none;
   position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2vh;
   margin-top: 4vh;
-  padding: 1vh 3vh 1vh 3vh;
+  padding: 1vh 2vh 1vh 2vh;
   z-index: 1;
   border-radius: 1vh;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.15s ease-out;
 }
 
 .dropdown-content a {
   display: block;
-  margin: 10px;
+  padding: 0.5vh 2vh;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .show {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 2vh;
+  opacity: 1;
+  max-height: 1000px;
+  transition: all 0.15s ease-in;
 }
 
 .dropdown-rotate {
-  transition: 0.3s;
+  transition: 0.2s;
   transform: rotate(180deg);
 }
 
